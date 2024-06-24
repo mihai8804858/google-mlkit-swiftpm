@@ -1,6 +1,6 @@
-# Google MLKit SwiftPM Wrapper
+# Google MLKit/MLKitTranslate SwiftPM Wrapper
 
-This is experimental project for building MLKit in Swift Package Manager.
+This is experimental project for building MLKit/MLKitTranslate in Swift Package Manager.
 
 ## Requirements
 
