@@ -11,7 +11,6 @@
 		D55A93462899396100177BD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55A93452899396100177BD8 /* ContentView.swift */; };
 		D55A93482899396300177BD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D55A93472899396300177BD8 /* Assets.xcassets */; };
 		D55A934C2899396300177BD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D55A934B2899396300177BD8 /* Preview Assets.xcassets */; };
-		D57545FD2BC508DD00CBFC5A /* GoogleMVFaceDetectorResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D57545FC2BC508DD00CBFC5A /* GoogleMVFaceDetectorResources.bundle */; };
 		D5A77F2D28AA8F22007019A8 /* Camera in Frameworks */ = {isa = PBXBuildFile; productRef = D5A77F2C28AA8F22007019A8 /* Camera */; };
 		D5FA2A9328F1C71E00BEFB62 /* MLKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FA2A9228F1C71E00BEFB62 /* MLKitExtensions.swift */; };
 		D5FA2A9528F1C72F00BEFB62 /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FA2A9428F1C72F00BEFB62 /* UIUtilities.swift */; };
@@ -55,7 +54,6 @@
 		D55A93472899396300177BD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D55A93492899396300177BD8 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
 		D55A934B2899396300177BD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D57545FC2BC508DD00CBFC5A /* GoogleMVFaceDetectorResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMVFaceDetectorResources.bundle; path = "../Pods/Pods/Build/Release-iphoneos/MLKitFaceDetection/GoogleMVFaceDetectorResources.bundle"; sourceTree = "<group>"; };
 		D5FA2A9228F1C71E00BEFB62 /* MLKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLKitExtensions.swift; sourceTree = "<group>"; };
 		D5FA2A9428F1C72F00BEFB62 /* UIUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
 		D5FA2A9628F1C75400BEFB62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 		D55A93372899396100177BD8 = {
 			isa = PBXGroup;
 			children = (
-				D57545FC2BC508DD00CBFC5A /* GoogleMVFaceDetectorResources.bundle */,
 				D55A93422899396100177BD8 /* Example */,
 				D55A93412899396100177BD8 /* Products */,
 				D55A935228993CE500177BD8 /* Frameworks */,
@@ -240,7 +237,6 @@
 				D5FA2AB728F280FF00BEFB62 /* image_has_text.jpg in Resources */,
 				D5FA2AAE28F280FF00BEFB62 /* japanese.png in Resources */,
 				D55A93482899396300177BD8 /* Assets.xcassets in Resources */,
-				D57545FD2BC508DD00CBFC5A /* GoogleMVFaceDetectorResources.bundle in Resources */,
 				D5FA2AB228F280FF00BEFB62 /* devanagari.png in Resources */,
 				D5FA2AAD28F280FF00BEFB62 /* japanese_sparse.png in Resources */,
 				D5FA2AB428F280FF00BEFB62 /* korean_sparse.png in Resources */,
@@ -392,7 +388,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Example/Preview Content\"";
-				DEVELOPMENT_TEAM = N5U649DS4Z;
+				DEVELOPMENT_TEAM = 8A3LKRT8JP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -438,7 +434,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Example/Preview Content\"";
-				DEVELOPMENT_TEAM = N5U649DS4Z;
+				DEVELOPMENT_TEAM = 8A3LKRT8JP;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

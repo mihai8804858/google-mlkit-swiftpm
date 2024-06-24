@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
   name: "Example",
-  platforms: [.iOS(.v14)],
+  platforms: [.iOS(.v16)],
   products: [
     .library(
       name: "Camera",
@@ -12,15 +12,12 @@ let package = Package(
   ],
   dependencies: [
     .package(path: "../../"),
-    .package(url: "https://github.com/firebase/firebase-ios-sdk", from: "10.0.0"),
   ],
   targets: [
     .target(
       name: "Camera",
       dependencies: [
-        .product(name: "MLKitBarcodeScanning", package: "google-mlkit-swiftpm"),
-        .product(name: "MLKitFaceDetection", package: "google-mlkit-swiftpm"),
-        .product(name: "FirebaseCrashlytics", package: "firebase-ios-sdk"),
+        .product(name: "MLKitTranslate", package: "MLKitTranslate"),
       ]),
     .testTarget(
       name: "CameraTests",
