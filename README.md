@@ -4,7 +4,7 @@ This is experimental project for building MLKit in Swift Package Manager.
 
 ## Requirements
 
-- iOS 14 and later
+- iOS 16 and later
 - Xcode 13.2.1 and later
 
 ## Installation
@@ -12,7 +12,17 @@ This is experimental project for building MLKit in Swift Package Manager.
 ### Use Swift Package Manager to install
 
 ```swift
-    .package(url: "https://github.com/d-date/google-mlkit-swiftpm", from: "5.0.0")
+    dependencies: [
+        .package(url: "https://github.com/roMummy/google-mlkit-swiftpm", from: "6.0.0"),
+    ],
+    targets: [
+        .target(
+            name: "YourTarget",
+            dependencies: [
+                .product(name: "MLKitTranslate", package: "google-mlkit-swiftpm"),
+            ]
+        )
+    ]
 ```
 
 ### Add Linker flags
@@ -24,9 +34,9 @@ Add these flags to `Other Linker Flags` in Build Settings of your Xcode projects
 
 ### Link `.bundle` to your project
 
-The `MLKitFaceDetection` contains `GoogleMVFaceDetectorResources.bundle`. Since the bundle can't be introduced via Swift PM, you need to link to your project by yourself.
+The `MLKitTranslate` contains `MLKitTranslate_resource.bundle`. Since the bundle can't be introduced via Swift PM, you need to link to your project by yourself.
 
-Download `GoogleMVFaceDetectorResources.bundle` from [Release](https://github.com/d-date/google-mlkit-swiftpm/releases/download/3.2.0/GoogleMVFaceDetectorResources.bundle.zip) and add to your Xcode project and make it available in your build target.
+Download `MLKitTranslate_resource.bundle` from [Release](https://github.com/d-date/google-mlkit-swiftpm/releases/download/3.2.0/GoogleMVFaceDetectorResources.bundle.zip) and add to your Xcode project and make it available in your build target.
 
 ## Limitation
 
