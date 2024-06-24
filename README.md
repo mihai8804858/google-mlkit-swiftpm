@@ -36,7 +36,7 @@ Add these flags to `Other Linker Flags` in Build Settings of your Xcode projects
 
 The `MLKitTranslate` contains `MLKitTranslate_resource.bundle`. Since the bundle can't be introduced via Swift PM, you need to link to your project by yourself.
 
-Download `MLKitTranslate_resource.bundle` from [Release](https://github.com/d-date/google-mlkit-swiftpm/releases/download/3.2.0/GoogleMVFaceDetectorResources.bundle.zip) and add to your Xcode project and make it available in your build target.
+Download `MLKitTranslate_resource.bundle` from [Release](https://github.com/roMummy/google-mlkit-swiftpm/releases/download/6.0.0/MLKitTranslate_resource.bundle.zip) and add to your Xcode project and make it available in your build target.
 
 ## Limitation
 
