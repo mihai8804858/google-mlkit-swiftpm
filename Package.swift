@@ -25,27 +25,27 @@ let package = Package(
     .binaryTarget(
       name: "GoogleToolboxForMac",
       url: "https://github.com/mihai8804858/google-mlkit-swiftpm/releases/download/6.0.0/GoogleToolboxForMac.xcframework.zip",
-      checksum: "0814fbc719d97ae26328d7395e0d8fa7bdf1ad1c93731cec2a71b5f9c19a8c90"
+      checksum: "d9f3fa65313974c7bbda3c163e2f0ceb265ec066dedd49ce29b8b0f059366671"
     ),
     .binaryTarget(
       name: "MLKitTranslate",
       url: "https://github.com/mihai8804858/google-mlkit-swiftpm/releases/download/6.0.0/MLKitTranslate.xcframework.zip",
-      checksum: "952b22652d3fea09006df084c5a48b854e26b3ff0b83676ec8b9ade7acfbe43b"
+      checksum: "106865d3a4c2da222f0676411fdd82fc0d9b025e562b943a26e05df84a4cb62e"
     ),
     .binaryTarget(
       name: "MLKitNaturalLanguage",
       url: "https://github.com/mihai8804858/google-mlkit-swiftpm/releases/download/6.0.0/MLKitNaturalLanguage.xcframework.zip",
-      checksum: "cdf6710592406f8f9814cdb6c4ed6167a48dce1b4fd6c20665a1da13f64913be"
+      checksum: "907bad37cb095636ca9badb0fb19d6049dd326e538b8cb25bd5742f75741f614"
     ),
     .binaryTarget(
       name: "MLKitCommon",
       url: "https://github.com/mihai8804858/google-mlkit-swiftpm/releases/download/6.0.0/MLKitCommon.xcframework.zip",
-      checksum: "bd9d76d733d9336ce965ed4549900be6661086417a2c437dbb2b6269df692c43"
+      checksum: "b90d62be7ee60f394504db53f288d848bda804b95c62e3cfc72439fe9f1fc18f"
     ),
     .binaryTarget(
       name: "GoogleUtilitiesComponents",
       url: "https://github.com/mihai8804858/google-mlkit-swiftpm/releases/download/6.0.0/GoogleUtilitiesComponents.xcframework.zip",
-      checksum: "59855e6f37aa5ca81c67574b11d9295bafc24ceef68e3e7981a9a2748d2a5246"
+      checksum: "b67e51f9a3da69716451b32d9f6e64c70649d7d2b6e5ad48ab9ce4ee47c05c47"
     ),
     .target(
       name: "Common",
