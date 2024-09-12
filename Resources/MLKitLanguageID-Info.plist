@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 <key>CFBundleName</key>
-<string>MLKitFaceDetection</string>
+<string>MLKitLanguageID</string>
 <key>DTSSDKName</key>
 <string>iphoneos17.4</string>
 <key>DTXcode</key>
@@ -21,7 +21,7 @@
 <key>CFBundlePackageType</key>
 <string>FMWK</string>
 <key>CFBundleShortVersionString</key>
-<string>5.0.0</string>
+<string>3.0.0</string>
 <key>CFBundleSupportedPlatforms</key>
 <array>
 <string>iPhoneOS</string>
@@ -29,7 +29,7 @@
 <key>CFBundleInfoDictionaryVersion</key>
 <string>6.0</string>
 <key>CFBundleExecutable</key>
-<string>MLKitFaceDetection</string>
+<string>MLKitLanguageID</string>
 <key>DTCompiler</key>
 <string>com.apple.compilers.llvm.clang.1_0</string>
 <key>UIRequiredDeviceCapabilities</key>
@@ -37,7 +37,7 @@
 <string>arm64</string>
 </array>
 <key>MinimumOSVersion</key>
-<string>12.0</string>
+<string>17.0</string>
 <key>CFBundleSignature</key>
 <string>????</string>
 <key>DTPlatformVersion</key>
@@ -47,6 +47,6 @@
 <key>DTPlatformBuild</key>
 <string>21E210</string>
 <key>CFBundleIdentifier</key>
-<string>com.google.firebase.mlkit.face-detection</string>
+<string>com.google.firebase.mlkit.language-id</string>
 </dict>
 </plist>

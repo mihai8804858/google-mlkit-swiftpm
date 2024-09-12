@@ -4,14 +4,20 @@ import PackageDescription
 
 let package = Package(
   name: "GoogleMLKitSwiftPM",
-  platforms: [.iOS(.v16)],
+  platforms: [.iOS(.v17), .macOS(.v13)],
   products: [
     .library(
-        name: "MLKitTranslate",
-        targets: ["MLKitTranslate", "MLKitNaturalLanguage", "Common"]),
+      name: "MLKitTranslate",
+      targets: ["MLKitTranslate", "MLKitNaturalLanguage", "Common"]
+    ),
     .library(
-        name: "MLKitNaturalLanguage",
-        targets: ["MLKitNaturalLanguage", "Common"]),
+        name: "MLKitLanguageID",
+        targets: ["MLKitLanguageID", "MLKitNaturalLanguage", "Common"]
+    ),
+    .library(
+      name: "MLKitNaturalLanguage",
+      targets: ["MLKitNaturalLanguage", "Common"]
+    )
   ],
   dependencies: [
     .package(url: "https://github.com/google/promises.git", exact: "2.4.0"),
@@ -19,33 +25,38 @@ let package = Package(
     .package(url: "https://github.com/google/GoogleUtilities.git", exact: "7.13.2"),
     .package(url: "https://github.com/google/gtm-session-fetcher.git", exact: "3.4.1"),
     .package(url: "https://github.com/firebase/nanopb.git", exact: "2.30910.0"),
-    .package(url: "https://github.com/ZipArchive/ZipArchive.git", .upToNextMajor(from: "2.5.5")),
+    .package(url: "https://github.com/ZipArchive/ZipArchive.git", .upToNextMajor(from: "2.5.5"))
   ],
   targets: [
     .binaryTarget(
       name: "GoogleToolboxForMac",
-      url: "https://github.com/mihai8804858/google-mlkit-swiftpm/releases/download/6.0.0/GoogleToolboxForMac.xcframework.zip",
-      checksum: "d9f3fa65313974c7bbda3c163e2f0ceb265ec066dedd49ce29b8b0f059366671"
-    ),
-    .binaryTarget(
-      name: "MLKitTranslate",
-      url: "https://github.com/mihai8804858/google-mlkit-swiftpm/releases/download/6.0.0/MLKitTranslate.xcframework.zip",
-      checksum: "106865d3a4c2da222f0676411fdd82fc0d9b025e562b943a26e05df84a4cb62e"
-    ),
-    .binaryTarget(
-      name: "MLKitNaturalLanguage",
-      url: "https://github.com/mihai8804858/google-mlkit-swiftpm/releases/download/6.0.0/MLKitNaturalLanguage.xcframework.zip",
-      checksum: "907bad37cb095636ca9badb0fb19d6049dd326e538b8cb25bd5742f75741f614"
-    ),
-    .binaryTarget(
-      name: "MLKitCommon",
-      url: "https://github.com/mihai8804858/google-mlkit-swiftpm/releases/download/6.0.0/MLKitCommon.xcframework.zip",
-      checksum: "b90d62be7ee60f394504db53f288d848bda804b95c62e3cfc72439fe9f1fc18f"
+      url: "https://github.com/mihai8804858/google-mlkit-swiftpm/releases/download/6.1.0/GoogleToolboxForMac.xcframework.zip",
+      checksum: "20e685c6a07c01e79c20e51e8ac7efe40c3b931f35c51d12bee72234e825be3d"
     ),
     .binaryTarget(
       name: "GoogleUtilitiesComponents",
-      url: "https://github.com/mihai8804858/google-mlkit-swiftpm/releases/download/6.0.0/GoogleUtilitiesComponents.xcframework.zip",
-      checksum: "b67e51f9a3da69716451b32d9f6e64c70649d7d2b6e5ad48ab9ce4ee47c05c47"
+      url: "https://github.com/mihai8804858/google-mlkit-swiftpm/releases/download/6.1.0/GoogleUtilitiesComponents.xcframework.zip",
+      checksum: "d1aafd7642a0c5d30231e694e3f277428e7b979bf31c71db3fa8a5b3ca58d16d"
+    ),
+    .binaryTarget(
+      name: "MLKitCommon",
+      url: "https://github.com/mihai8804858/google-mlkit-swiftpm/releases/download/6.1.0/MLKitCommon.xcframework.zip",
+      checksum: "859b2afa79e91ca12daf04324f82e6cc0debdb125f4465d31a93bd273c90df2f"
+    ),
+    .binaryTarget(
+      name: "MLKitNaturalLanguage",
+      url: "https://github.com/mihai8804858/google-mlkit-swiftpm/releases/download/6.1.0/MLKitNaturalLanguage.xcframework.zip",
+      checksum: "0c20eb9ff52d05725b99ebbe4dfdb11486cc19a76316d42993c53416a06a9a2b"
+    ),
+    .binaryTarget(
+      name: "MLKitTranslate",
+      url: "https://github.com/mihai8804858/google-mlkit-swiftpm/releases/download/6.1.0/MLKitTranslate.xcframework.zip",
+      checksum: "d9456df183ae0fdd3484b7b6ccc0dd5f2a3e3183a97a069e2d12675f576339f2"
+    ),
+    .binaryTarget(
+      name: "MLKitLanguageID",
+      url: "https://github.com/mihai8804858/google-mlkit-swiftpm/releases/download/6.1.0/MLKitLanguageID.xcframework.zip",
+      checksum: "c0ad54670685fa58af3cb47b6533fdf7127cd88714cea104b217c4240c470ace"
     ),
     .target(
       name: "Common",
@@ -66,8 +77,8 @@ let package = Package(
         .product(name: "GoogleDataTransport", package: "GoogleDataTransport"),
         .product(name: "nanopb", package: "nanopb"),
         .product(name: "FBLPromises", package: "promises"),
-        .product(name: "ZipArchive", package: "ZipArchive"),
+        .product(name: "ZipArchive", package: "ZipArchive")
       ]
-    ),
+    )
   ]
 )

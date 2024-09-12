@@ -1,11 +1,11 @@
-# Google MLKit/MLKitTranslate SwiftPM Wrapper
+# Google MLKit SwiftPM Wrapper
 
-This is experimental project for building MLKit/MLKitTranslate in Swift Package Manager.
+This is experimental project for building MLKit in Swift Package Manager.
 
 ## Requirements
 
-- iOS 16 and later
-- Xcode 13.2.1 and later
+- iOS 17 and later
+- Xcode 15 and later
 
 ## Installation
 
@@ -13,13 +13,14 @@ This is experimental project for building MLKit/MLKitTranslate in Swift Package 
 
 ```swift
     dependencies: [
-        .package(url: "https://github.com/roMummy/google-mlkit-swiftpm", from: "6.0.0"),
+        .package(url: "https://github.com/mihai8804858/google-mlkit-swiftpm", from: "6.0.0"),
     ],
     targets: [
         .target(
             name: "YourTarget",
             dependencies: [
-                .product(name: "MLKitTranslate", package: "google-mlkit-swiftpm"),
+                .product(name: "MLKitLanguageID", package: "google-mlkit-swiftpm"),
+                .product(name: "MLKitTranslate", package: "google-mlkit-swiftpm")
             ]
         )
     ]
@@ -36,12 +37,11 @@ Add these flags to `Other Linker Flags` in Build Settings of your Xcode projects
 
 The `MLKitTranslate` contains `MLKitTranslate_resource.bundle`. Since the bundle can't be introduced via Swift PM, you need to link to your project by yourself.
 
-Download `MLKitTranslate_resource.bundle` from [Release](https://github.com/roMummy/google-mlkit-swiftpm/releases/download/6.0.0/MLKitTranslate_resource.bundle.zip) and add to your Xcode project and make it available in your build target.
+Download `MLKitTranslate_resource.bundle` from [Release](https://github.com/mihai8804858/google-mlkit-swiftpm/releases/download/6.1.0/MLKitTranslate_resource.bundle.zip) and add to your Xcode project and make it available in your build target.
 
 ## Limitation
 
 - Since pre-built MLKit binary missing `arm64` for iphonesimulator, this project enables to build in `arm64` for iphoneos and `x86_64` for iphonesimulator only.
-- Only supported `Face Detection` and `Barcode Scanning` right now.
 
 ## Example
 
